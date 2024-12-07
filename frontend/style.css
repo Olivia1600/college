@@ -1,0 +1,118 @@
+/* General reset for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;  /* Dark background color */
+    color: #ffffff;            /* Light text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container for the content */
+  .container {
+    background: #1e1e1e;       /* Slightly lighter dark background */
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Soft shadow */
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  h1 {
+    color: #2ecc71;             /* Green color for the main heading */
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Balance section styling */
+  .balance h3 {
+    font-size: 16px;
+    color: #7f8c8d;             /* Light gray for subheading */
+  }
+  
+  .balance h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #ffffff;             /* White color for balance */
+  }
+  
+  /* Form inputs styling */
+  input {
+    background: #333333;        /* Dark input fields */
+    border: 1px solid #555555;  /* Slightly lighter border */
+    color: #ffffff;             /* White text inside inputs */
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin: 10px 0;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #2ecc71;      /* Green border on focus */
+  }
+  
+  /* Button styling */
+  button {
+    background: #2ecc71;        /* Green background for the button */
+    color: #ffffff;             /* White text on button */
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #27ae60;  /* Darker green on hover */
+  }
+  
+  /* Transaction list styling */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  ul li {
+    padding: 10px;
+    margin: 10px 0;
+    background: #333333;        /* Dark background for each transaction */
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul li.income {
+    border-left: 5px solid #2ecc71;  /* Green border for income transactions */
+  }
+  
+  ul li.expense {
+    border-left: 5px solid #e74c3c;  /* Red border for expense transactions */
+  }
+  
+  ul li button {
+    background: #e74c3c;           /* Red delete button */
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  ul li button:hover {
+    background: #c0392b;           /* Darker red on hover */
+  }
+  
